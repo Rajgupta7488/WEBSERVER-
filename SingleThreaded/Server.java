@@ -16,7 +16,7 @@ public class Server{
         while(true){
             try{
 
-                System.out.println("Server is listening on port" + port);
+                System.out.println("Server is listening on port " + port);
                 Socket acceptedConnection = socket.accept();
                 System.out.println("Connection accepted from client" + acceptedConnection.getRemoteSocketAddress());
                 PrintWriter toClient = new PrintWriter(acceptedConnection.getOutputStream());
